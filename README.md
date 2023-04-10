@@ -7,7 +7,7 @@ An Object is a real-world element in an object-oriented environment that may hav
 
 </br>
 
-<h2>Object</h2>
+<h2>Class</h2>
 
 **A class is a blueprint or a template for creating objects, which defines a set of attributes (data members) and methods (functions) that the objects of that class will have.**</br>
 
