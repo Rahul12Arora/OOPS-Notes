@@ -2,9 +2,8 @@
 
 <h2>Object</h2>
 
-**An object is an instance of a class. It is a runtime entity that contains its own set of attributes (data members) and methods (functions) as defined in the class.
-**</br>
-**An Object is a real-world element in an object-oriented environment that may have physical or conceptual existence.**</br>
+**An object is an instance of a class. It is a runtime entity that contains its own set of attributes (data members) and methods (functions) as defined in the class.**</br>
+An Object is a real-world element in an object-oriented environment that may have physical or conceptual existence.
 
 </br>
 
@@ -34,3 +33,7 @@ Directly during declaration
   <li>In an instance initialization block</li>
   <li>In a static initialization block</li>
 </ul>
+
+A final variable can be declared as either an instance variable or a class variable (static final). When a final variable is declared as an instance variable, it means that each instance of the class will have its own copy of the variable, and once it is initialized, its value cannot be changed. When a final variable is declared as a class variable (static final), it means that the variable is a constant that is shared across all instances of the class.</br>
+
+In summary, static variables are class-level variables that can be accessed without creating an instance of the class, while final variables are constant variables whose value cannot be changed once it is initialized.</br>
