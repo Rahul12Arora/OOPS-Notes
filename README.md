@@ -52,6 +52,8 @@ The structural Diagrams are used to create a static model of the software. That 
 
 The Behavioral Diagrams are used to create a dynamic model of the software. It tells how the different components or modules interact with each other.</br>
 
+![image](https://user-images.githubusercontent.com/108695777/232028973-f2ecaf75-dc11-4ffb-ad0f-c822fd3ca9f9.png)
+
 
 Some of the structural and behavioral diagrams supported by UML are as shown:</br>
 ![image](https://user-images.githubusercontent.com/108695777/231949305-d14c546f-21bb-4894-b0c5-da92703483cd.png)
@@ -64,6 +66,69 @@ A Class/Class diagram in UML Consists of 3 parts
   <li>Class Methods</li>
 </ul>
 **A class diagram in the Unified Modeling Language (UML) is a type of structural diagram that describes the structure of a system by showing the System's Classes, their Attributes, Operations (or methods), and the relationships among objects.**</br>
+
+
+<h2>Generalization</h2>
+
+**Generalization is a key concept in object-oriented programming, and it refers to the process of creating a more general (or abstract) superclass that defines common attributes and behaviors for a group of related subclasses.**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Abstract Classes & Interfaces</h2>
+![image](https://user-images.githubusercontent.com/108695777/232040280-03c2016c-46f5-40df-b99d-c393acc6b7de.png)
+
+<h2>Super Keyword</h2>
+In Java, the super keyword is used to refer to the parent class of a subclass, while this represents to the current class.
+
+<ol>
+<li>super is used to call a superclass constructor: When a subclass is created, its constructor must call the constructor of its parent class. This is done using the <li>super() keyword, which calls the constructor of the parent class.</li>
+<li>super is used to call a superclass method: A subclass can call a method defined in its parent class using the super keyword. This is useful when the subclass wants to invoke the parent class’s implementation of the method in addition to its own.</li>
+<li>super is used to access a superclass field: A subclass can access a field defined in its parent class using the super keyword. This is useful when the subclass wants to reference the parent class’s version of a field.</li>
+<li>super must be the first statement in a constructor: When calling a superclass constructor, the super() statement must be the first statement in the constructor of the subclass.</li>
+<li>super cannot be used in a static context: The super keyword cannot be used in a static context, such as in a static method or a static variable initializer.</li>
+<li>super is not required to call a superclass method: While it is possible to use the super keyword to call a method in the parent class, it is not required. If a method is not overridden in the subclass, then calling it without the super keyword will invoke the parent class’s implementation.</li>
+</ol>
+
+
+
+
+
+
+
+
 
 
 <h2>Static Vs Final Variables</h2>
