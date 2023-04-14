@@ -37,6 +37,34 @@ A single class can be used to create any number of instances or objects.
 
 </ol>
 
+<h2>Software Development Process</h2>
+
+![image](https://user-images.githubusercontent.com/108695777/231948701-0a233105-dccd-4369-a746-d75e75e479c5.png)
+
+
+<h2>UML</h2>
+**The Unified Modeling Language (UML) is a standard graphical language for modeling object-oriented software.**
+
+<h3>UML Diagrams</h3>
+As UML is a graphical language, it supports two types of diagrams that can be classified as Structural and Behavioral.</br>
+
+The structural Diagrams are used to create a static model of the software. That is, it gives an idea about what all components build up the system.</br>
+
+The Behavioral Diagrams are used to create a dynamic model of the software. It tells how the different components or modules interact with each other.</br>
+
+
+Some of the structural and behavioral diagrams supported by UML are as shown:</br>
+![image](https://user-images.githubusercontent.com/108695777/231949305-d14c546f-21bb-4894-b0c5-da92703483cd.png)
+
+<h3>Class Diagrams in UML</h3>
+A Class/Class diagram in UML Consists of 3 parts
+<ul>
+  <li>Class Name</li>
+  <li>Class Properties</li>
+  <li>Class Methods</li>
+</ul>
+**A class diagram in the Unified Modeling Language (UML) is a type of structural diagram that describes the structure of a system by showing the System's Classes, their Attributes, Operations (or methods), and the relationships among objects.**</br>
+
 
 <h2>Static Vs Final Variables</h2>
 
