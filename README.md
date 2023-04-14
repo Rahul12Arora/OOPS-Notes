@@ -16,7 +16,26 @@ NOT REAL: Class is not a REAL THING; it’s just a concept, actually the objects
 A single class can be used to create any number of instances or objects.
 </br>
 
+<h2>Procedural vs Object Oriented Paradigm</h2>
+<ol>
 
+<li>Both paradigms are used to write computer programs, but they have different approaches to organizing and manipulating data and behavior.</li>
+
+<li>Procedural programming focuses on procedures and functions, while object-oriented design focuses on objects and classes.</li>
+
+<li>In procedural programming, data and behavior are typically separated into different parts of the program, with data stored in variables or data structures and behavior implemented as functions or procedures that manipulate that data. In contrast, in object-oriented design, data and behavior are encapsulated together within objects, with objects representing a self-contained unit that combines data and behavior in a single entity. This makes it easier to manage the complexity of the program, and helps to ensure that data is used and manipulated in a consistent and safe manner.</li>
+
+<li>Both paradigms promote code reusability, but object-oriented design does so through inheritance and polymorphism, while procedural programming relies on functions that can be reused in different parts of the program.</li>
+
+<li>Object-oriented design promotes modularity by allowing objects to be developed independently and combined as needed, while procedural programming often relies on larger functions that contain multiple steps.</li>
+
+<li>Encapsulation is a key concept in object-oriented design, which protects an object's internal state from outside interference. In procedural programming, data is often shared across functions, which can lead to unexpected changes in program state.</li>
+
+<li>In terms of code organization style, procedural programming typically uses a top-down approach, while object-oriented design uses a bottom-up approach.</li>
+
+<li>Examples of procedural programming languages include C, Pascal, and Fortran, while examples of object-oriented programming languages include Java, C++, Python, and Ruby.</li>
+
+</ol>
 
 
 <h2>Static Vs Final Variables</h2>
