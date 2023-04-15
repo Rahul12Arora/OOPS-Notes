@@ -68,7 +68,7 @@ A Class/Class diagram in UML Consists of 3 parts
 **A class diagram in the Unified Modeling Language (UML) is a type of structural diagram that describes the structure of a system by showing the System's Classes, their Attributes, Operations (or methods), and the relationships among objects.**</br>
 
 
-<h2>Generalization</h2>
+<h1>Generalization</h1>
 
 **Generalization is a key concept in object-oriented programming, and it refers to the process of creating a more general (or abstract) superclass that defines common attributes and behaviors for a group of related subclasses.**
 
@@ -129,7 +129,7 @@ public class Main {
 //In a java file only a single public Main class with a static main method must exist, all other classes cannot be public/static
 ```
 
-<h2>Super Keyword</h2>
+<h1>Super Keyword</h1>
 In Java, the super keyword is used to refer to the parent class of a subclass, while this represents to the current class.
 
 <ol>
@@ -157,13 +157,17 @@ In Java, the super keyword is used to refer to the parent class of a subclass, w
 
 
 
-
+<h1>Static</h1>
 
 <h2>Static Vs Final Variables</h2>
 
 In Java, both static and final are keywords used to declare variables with specific properties.</br>
 
-A static variable is a class-level variable, which means that its value is shared across all instances of that class. It can be accessed without creating an instance of the class. When a variable is declared as static, it belongs to the class and not to any specific object of that class.</br>
+**A static variable is a class-level variable, which means that its value is shared across all instances of that class. It can be accessed without creating an instance of the class. When a variable is declared as static, it belongs to the class(even non-static classes) and not to any specific object of that class.**</br>
+
+**Static variable in Java is variable which belongs to the class and initialized only once at the start of the execution.**
+
+** Static variables are initialized only once, at the start of the execution. These variables will be initialized first, before the initialization of any instance variables**
 
 On the other hand, a final variable is a constant variable whose value cannot be changed once it is initialized. A final variable can be initialized in the following ways:</br>
 
@@ -177,3 +181,27 @@ Directly during declaration
 A final variable can be declared as either an instance variable or a class variable (static final). When a final variable is declared as an instance variable, it means that each instance of the class will have its own copy of the variable, and once it is initialized, its value cannot be changed. When a final variable is declared as a class variable (static final), it means that the variable is a constant that is shared across all instances of the class.</br>
 
 In summary, static variables are class-level variables that can be accessed without creating an instance of the class, while final variables are constant variables whose value cannot be changed once it is initialized.</br>
+
+<h2>Static class in Java</h2>
+<ul>
+<li>In java, we have static instance variables as well as static methods and also static block. Classes can also be made static in Java.</li>
+
+<li>Java allows us to define a class within another class. Such a class is called a nested class. The class which enclosed nested class is known as Outer class. In java, we can’t make Top level class static. Only nested classes can be static.</li>
+  
+</ul>
+
+<h2>Static Methods</h2>
+
+What is Static Method in Java?
+Static method in Java is a method which belongs to the class and not to the object.
+A static method can access only static data.
+ It is a method which belongs to the class and not to the object(instance)
+ A static method can access only static data. It can not access non-static data
+(instance variables)
+ A static method can call only other static methods and can not call a nonstatic method from it.
+ A static method can be accessed directly by the class name and doesn’t need
+any object
+ A static method cannot refer to "this" or "super" keywords in anyway
+Syntax :
+<class-name>.<method-name>
+Note: main method is static, since it must be accessible for an application to run, before any instantiation takes place.
