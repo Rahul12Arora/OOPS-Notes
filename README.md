@@ -123,6 +123,13 @@ In Java, the super keyword is used to refer to the parent class of a subclass, w
 </ol>
 
 
+<ul>
+<li>Call to super() must be the first statement in the Derived(Student) Class constructor because if you think about it, it makes sense that the superclass has no knowledge of any subclass, so any initialization it needs to perform is separate from and possibly prerequisite to any initialization performed by the subclass. Therefore, it needs to complete its execution first.</li>
+<li>If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass. If the superclass does not have a no-argument constructor, you will get a compile-time error. The object does have such a constructor, so if the Object is the only superclass, there is no problem.</li>
+![image](https://user-images.githubusercontent.com/108695777/232190859-94ce250d-e83d-4cae-8897-e890bc458299.png)
+<li>If a subclass constructor invokes a constructor of its superclass, either explicitly or implicitly, you might think that a whole chain of constructors is called, all the way back to the constructor of Object. This, in fact, is the case. It is called constructor chaining.</li>
+</ul>
+
 
 
 
