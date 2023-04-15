@@ -192,16 +192,15 @@ In summary, static variables are class-level variables that can be accessed with
 
 <h2>Static Methods</h2>
 
-What is Static Method in Java?
-Static method in Java is a method which belongs to the class and not to the object.
-A static method can access only static data.
- It is a method which belongs to the class and not to the object(instance)
- A static method can access only static data. It can not access non-static data
-(instance variables)
- A static method can call only other static methods and can not call a nonstatic method from it.
- A static method can be accessed directly by the class name and doesn’t need
-any object
- A static method cannot refer to "this" or "super" keywords in anyway
-Syntax :
-<class-name>.<method-name>
+***What is Static Method in Java?***
+
+Static method in Java is a method which belongs to the class and not to the object, A static method can access only static data.</br>
+<ol>
+<li> It is a method which belongs to the class and not to the object(instance)</li>
+<li> A static method can access only static data. It can not access non-static data(instance variables)</li>
+<li> A static method can call only other static methods and can not call a nonstatic method from it.</li>
+<li> A static method can be accessed directly by the class name and doesn’t need any object</li>
+<li> A static method cannot refer to "this" or "super" keywords in anyway.</li>
+</ol>
+Syntax : <class-name>.<method-name></br>
 Note: main method is static, since it must be accessible for an application to run, before any instantiation takes place.
