@@ -67,6 +67,15 @@ A Class/Class diagram in UML Consists of 3 parts
 </ul>
 **A class diagram in the Unified Modeling Language (UML) is a type of structural diagram that describes the structure of a system by showing the System's Classes, their Attributes, Operations (or methods), and the relationships among objects.**</br>
 
+<li>In object-oriented programming, there are several types of relationships that can exist between classes. Here are the four main types:</li>
+
+<li>Inheritance: This is a "is-a" relationship between two classes, where one class (the subclass) inherits properties and methods from another class (the superclass). The subclass is a more specialized version of the superclass and may add new behavior or override existing behavior.</li>
+
+<li>Composition: This is a "has-a" relationship between two classes, where one class contains an instance of another class as one of its member variables. The containing class is responsible for creating and managing the contained object.</li>
+
+<li>Aggregation: This is a specific type of composition relationship where one class is composed of multiple instances of another class. The contained objects are independent of the containing object and can exist outside of it.</li>
+
+<li>Association: This is a relationship between two classes where one class uses another class, but there is no ownership or containment relationship between them. The relationship can be one-to-one, one-to-many, or many-to-many, and can be bidirectional or unidirectional.</li>
 
 <h1>Generalization</h1>
 
