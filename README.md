@@ -73,42 +73,61 @@ A Class/Class diagram in UML Consists of 3 parts
 **Generalization is a key concept in object-oriented programming, and it refers to the process of creating a more general (or abstract) superclass that defines common attributes and behaviors for a group of related subclasses.**
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <h2>Abstract Classes & Interfaces</h2>
+
 ![image](https://user-images.githubusercontent.com/108695777/232040280-03c2016c-46f5-40df-b99d-c393acc6b7de.png)
+
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle v = new Car(4,1,5,100);     //LHS dictates what are the reference methods available, RHS actually implements those methods
+        v.display();        //Allowed => now both Vehicle & Car have display method(), but Car over-rides Vehicle; down to up approach.
+        // v.carOnlyMethod();  //Not Allowed => because only reference methods of the Vehicle class are available.
+
+        Iterable<Integer> iarr = new ArrayList<>();   // only methods(11) of Iterable are present with iarr, ArrayList implements them
+        Collection<Integer> carr = new ArrayList<>(); // all methods(20) of Colection are present with carr, ArrayList implements them
+        List<Integer> larr = new ArrayList<>();       // all methods(30) of List are present with larr, ArrayList implements them
+        ArrayList<Integer> arr = new ArrayList<>();   // all methods(30) of ArrayList are present with iarr, ArrayList implements them
+
+
+    }
+    static class Vehicle{
+        int wheels;
+        int power;
+        public Vehicle(int wheels, int power){
+            this.wheels=wheels;
+            this.power=power;
+        }
+
+        public void display(){
+            System.out.println("Hello i am vehicle's method with data");
+        }
+
+    }
+    static class Car extends Vehicle{
+    int doors;
+    int handle;
+    public Car(int doors, int handle, int wheels, int power){
+        super(wheels,power);
+        this.doors=doors;
+        this.handle=handle;
+    }
+        public void display(){
+            System.out.println("Hello i am car's method with data");
+        }
+        public void carOnlyMethod(){
+            System.out.println("Hello i am car's method with data");
+        }
+
+    }
+
+}
+
+//Static variable is only accessible in static method
+//In a java file only a single public Main class with a static main method must exist, all other classes cannot be public/static
+```
 
 <h2>Super Keyword</h2>
 In Java, the super keyword is used to refer to the parent class of a subclass, while this represents to the current class.
@@ -126,7 +145,9 @@ In Java, the super keyword is used to refer to the parent class of a subclass, w
 <ul>
 <li>Call to super() must be the first statement in the Derived(Student) Class constructor because if you think about it, it makes sense that the superclass has no knowledge of any subclass, so any initialization it needs to perform is separate from and possibly prerequisite to any initialization performed by the subclass. Therefore, it needs to complete its execution first.</li>
 <li>If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass. If the superclass does not have a no-argument constructor, you will get a compile-time error. The object does have such a constructor, so if the Object is the only superclass, there is no problem.</li>
+  
 ![image](https://user-images.githubusercontent.com/108695777/232190859-94ce250d-e83d-4cae-8897-e890bc458299.png)
+
 <li>If a subclass constructor invokes a constructor of its superclass, either explicitly or implicitly, you might think that a whole chain of constructors is called, all the way back to the constructor of Object. This, in fact, is the case. It is called constructor chaining.</li>
 </ul>
 
