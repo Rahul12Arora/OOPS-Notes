@@ -261,3 +261,158 @@ Static method in Java is a method which belongs to the class and not to the obje
 </ol>
 Syntax : <class-name>.<method-name></br>
 Note: main method is static, since it must be accessible for an application to run, before any instantiation takes place.
+
+<h2>Access Modifiers</h2>
+
+```
+  public class Car {
+    private String make;     // only accessible within this class
+    String model;            // default access - accessible within this package
+    protected int year;      // accessible within this package and any subclass
+    public int mileage;      // accessible from anywhere
+
+    // Constructor
+    public Car(String make, String model, int year, int mileage) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.mileage = mileage;
+    }
+
+    // Getter for private field make
+    public String getMake() {
+        return make;
+    }
+
+    // Setter for private field make
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    // Method with default access
+    void drive() {
+        System.out.println("The " + year + " " + make + " " + model + " is being driven.");
+    }
+
+    // Method with protected access
+    protected void maintenance() {
+        System.out.println("Performing maintenance on the " + year + " " + make + " " + model + ".");
+    }
+
+    // Method with public access
+    public void sell() {
+        System.out.println("Selling the " + year + " " + make + " " + model + " with " + mileage + " miles.");
+    }
+}
+```
+
+<h1>4 Pillar of OOPS</h1>
+  <h2>Inheritance</h2>
+  
+**Inheritance is a procedure to inherit the features from parent to child in the real world. Similarly, Inheritance in OOPS is a procedure by which one ClassClass acquires all the properties and behaviors of the parent class. Inheritance ensures the reusability of the code. For example, let there be a class named Animal having the feature called 'Eat' and 'Walk .' Let there be another class named 'Dog .'The 'Dog' class inherits all the features from the Animal class. So do we need to provide an Eat and Walk feature to the Dog class? No, we don't. These features are implicit in Dog class.**</br> 
+
+Java uses the 'extends' keyword to acquire the features of the parent class. There is an 'IS-A' relationship between Dog and Animal class. We can write- Dog IS-A Animal. So Inheritance forms an IS-A relationship between the child and parent class. </br>
+
+ 
+
+<h3>Types of Inheritance</h3>
+ 
+
+There are a total of five types of Inheritance in OOPS.</br>
+
+<ul>
+<li>Single Inheritance</li>
+<li>Multilevel Inheritance</li>
+<li>Hierarchical Inheritance</li>
+<li>Multiple Inheritance</li>
+<li>Hybrid Inheritance</li>
+</ul>
+
+JAVA does not provide Multiple and Hybrid Inheritance. We will go through each Inheritance in detail in upcoming blogs.</br>
+</br>
+
+<ul>Advantages of Inheritance
+<li>Code reusability</li>
+<li>We can achieve Polymorphism using Inheritance.</li>
+</ul>
+ 
+
+<ul>Disadvantages of Inheritance
+<li>The child class and the parent class are tightly coupled. Any changes in the parent class equally affect all the child classes.</li>
+  </ul>
+
+ 
+
+<h2>Polymorphism</h2>
+ 
+
+**Poly means many, and morphism means forms. We know that Water also exists in multiple states, such as Solid, Liquid, and Gas. So Water shows Polymorphism. In JAVA, we can achieve Polymorphism using methods. There are two types of Polymorphism  that JAVA supports.**</br>
+
+ 
+Compile-time Polymorphism</br>
+Compile-time Polymorphism is also known as static Polymorphism. We can achieve it by method overloading.
+
+<ul>Method overloading satisfies three conditions.
+
+  <li>There must be at least two methods of the same name</li>
+  <li>Both the methods should be inside the same Class </li>
+  <ul>Both methods must have different arguments
+    <li>=>The number of arguments is different</li>
+    <li>=>The sequence of arguments is different</li>
+    <li>=>Type of argument is different</li>
+  </ul>
+
+  <li>**The compiler handles Compile-time Polymorphism.**</li>
+
+Runtime polymorphism 
+Runtime polymorphism is also called dynamic Polymorphism. We can achieve Runtime polymorphism by method overriding.
+
+We can achieve method overriding by satisfying three conditions.
+
+There must be at least two methods of the same name 
+Both methods belong to different classes 
+Both methods must have the same arguments 
+                =>The number of arguments is the same
+
+                =>The sequence of arguments is the same
+
+                =>Type of argument is the same
+
+ 
+
+JVM handles the runtime polymorphism. 
+
+ 
+
+Abstraction  
+ 
+
+Abstraction is a property of hiding the internal implementation and highlighting the setup services beneficial to the user. For example, the smartphone user does not know the internal performance of the Smartphone and its workings; instead, they are interested in the services provided by the Smartphone. In Java, we can achieve abstraction in two ways.
+
+Using abstract ClassClass
+using interfaces 
+ 
+
+Using abstract Class, we can achieve abstraction up to 0-100% but using the interfaces, we can achieve it up to 100%. 
+
+ 
+
+Advantages of abstraction 
+Reduces complexity
+Avoid code duplication 
+Ease the burden of maintenance
+Increase security and confidentiality 
+ 
+
+Encapsulation 
+ 
+
+Encapsulation is a mechanism to bundle the data and code acting on the data together as a single unit. there are two steps to achieve encapsulation in Java
+
+declare the variable of a class as private
+Provide a Public setter and getter method to modify and view the values of the variables.
+ 
+
+Advantages of encapsulation 
+Loosely coupled code 
+Better access control and security 
