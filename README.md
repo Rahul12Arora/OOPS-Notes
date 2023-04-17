@@ -384,7 +384,7 @@ JVM handles the runtime polymorphism.
 
  
 
-Abstraction  
+<h2>Abstraction</h2>
  
 
 Abstraction is a property of hiding the internal implementation and highlighting the setup services beneficial to the user. For example, the smartphone user does not know the internal performance of the Smartphone and its workings; instead, they are interested in the services provided by the Smartphone. In Java, we can achieve abstraction in two ways.
@@ -404,7 +404,7 @@ Ease the burden of maintenance
 Increase security and confidentiality 
  
 
-Encapsulation 
+<h2>Encapsulation</h2>
  
 
 Encapsulation is a mechanism to bundle the data and code acting on the data together as a single unit. there are two steps to achieve encapsulation in Java
