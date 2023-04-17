@@ -262,6 +262,9 @@ Static method in Java is a method which belongs to the class and not to the obje
 Syntax : <class-name>.<method-name></br>
 Note: main method is static, since it must be accessible for an application to run, before any instantiation takes place.
 
+<h2>Final methods</h2>
+**You can declare some or all of a class's methods final. You use the final keyword in a method declaration to indicate that the method cannot be overridden by subclasses.**
+
 <h2>Access Modifiers</h2>
 
 ```
